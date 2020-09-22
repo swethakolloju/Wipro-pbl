@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+public class hashset2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet <String> hs = new HashSet();
+		hs.add("Sainath");
+		hs.add("Nani");
+		hs.add("Sanjana");
+		hs.add("Amit Bansal");
+		hs.add("Swetha");
+		hs.add("Samaja");
+		hs.add("Vikas");
+		hs.add("Vara prasad");
+		hs.add("SriVathsav");
+		hs.add("Nani");
+		hs.add("Nani");
+		hs.add("Vara prasad");
+		hs.add("Vara prasad");
+		hs.add("Vara prasad");
+		System.out.println("HashSet : "+hs);
+		Iterator it = hs.iterator();
+		while(it.hasNext()) {
+			System.out.println((String)it.next());
+		}
+
+	}
+
+}
