@@ -1,0 +1,27 @@
+import java.util.*;
+public class TreeSet3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		TreeSet<String> ts = new TreeSet();
+		ts.add("Alpha");
+		ts.add("Beta");
+		ts.add("Cat");
+		ts.add("Doll");
+		ts.add("Electrical");
+		System.out.println("TreeSet : "+ts);
+		Set <String> rev = ts.descendingSet();
+		Iterator<String> it = rev.iterator();
+		while(it.hasNext()) {
+			System.out.print((String)it.next()+" ");
+			}
+		System.out.println();
+		System.out.println("Enter input :");
+		String name = sc.next();
+		
+			if(ts.contains(name)) System.out.println("Found");
+			else System.out.println("Not Found");
+		
+	}
+}
