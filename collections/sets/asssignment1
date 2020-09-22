@@ -1,0 +1,32 @@
+import java.util.*;
+public class HashSet1 {
+	HashSet <String> H1 = new HashSet();
+	public HashSet<String> saveCountryName (String Countryname) {
+		H1.add(Countryname);
+		return H1;
+	}
+	public String getCountryName(String Countryname) {
+		Iterator it = H1.iterator();
+		
+		while(it.hasNext()) {
+			if(it.next().equals(Countryname)) {
+			return Countryname;
+			}
+		}
+		return null;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String Country = sc.next();
+		HashSet1 obj = new HashSet1();
+		obj.saveCountryName("India");
+		obj.saveCountryName("Switzerland");
+		obj.saveCountryName("Germany");
+		obj.saveCountryName("Spain");
+		System.out.println(obj.getCountryName(Country));
+		//System.out.println();
+
+	}
+
+}
