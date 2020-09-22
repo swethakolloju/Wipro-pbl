@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.*;
+
+public class Linked {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> mn = new LinkedList<>();
+		
+		mn.add("jan");
+		mn.add("feb");
+		mn.add("mar");
+		mn.add("apr");
+		mn.add("may");
+		mn.add("jun");
+		mn.add("jul");
+		mn.add("aug");
+		mn.add("sep");
+		mn.add("nov");
+		mn.add("oct");
+		mn.add("dec");
+		System.out.println("monnths"+mn);
+	}
+
+}
