@@ -1,0 +1,34 @@
+import java.util.*;
+public class TreeSet4 {
+	TreeSet<String> ts = new TreeSet();
+	public void saveCountries(String CountryName) {
+		ts.add(CountryName);
+		System.out.println(ts);
+		//return ts;
+	}
+	public String getCountryName(String CountryName) {
+		Iterator<String> it = ts.iterator();
+		while(it.hasNext()) {
+			if(it.next().equals(CountryName)) return CountryName;
+		}
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String country = sc.next();
+		TreeSet4 obj = new TreeSet4();
+		obj.saveCountries("#++");
+		obj.saveCountries("111");
+		obj.saveCountries("Zebra_Swetha");
+		obj.saveCountries("India");
+		obj.saveCountries("Switzerland");
+		obj.saveCountries("Alpha");
+		obj.saveCountries("Germany");
+		obj.saveCountries("Spain");
+		obj.saveCountries("Italy");
+		System.out.println(obj.getCountryName(country));
+
+	}
+}
