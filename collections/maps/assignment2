@@ -1,0 +1,48 @@
+mport java.util.*;
+
+public class HashMap4 {
+	HashMap<String,Integer> hmap = new HashMap();
+	public void contact(String name,int number) {
+		hmap.put(name,number);
+		
+	}
+	public void showkey(String key) {
+	
+	if(hmap.containsKey(key)) System.out.println("Key Found");
+	else System.out.println("Key Not Found");
+	
+	}
+	public void showvalue(int value) {
+	
+	if(hmap.containsValue(value)) System.out.println("Value Found");
+	else System.out.println("Value not Found");
+	Set set = hmap.entrySet();
+	Iterator itr = set.iterator();
+	while(itr.hasNext()) {
+		Map.Entry me = (Map.Entry)itr.next();
+		System.out.println("Keys are : "+me.getKey());
+		System.out.println("Values are : "+me.getValue());
+	}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap4 obj = new HashMap4 ();
+		obj.contact("Sainath",5436422);
+		obj.contact("Swetha",54564324);
+		obj.contact("Samaja",54335431);
+		obj.contact("Vikas",65433256);
+		obj.contact("Sanjana",63856996);
+		obj.contact("Vp",68354533);
+		obj.contact("Vatshav",35432443);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Key to be Checked :");
+		String key = sc.next();
+		obj.showkey(key);
+		System.out.println("Enter Value to be Checked :");
+		int value = sc.nextInt();
+		obj.showvalue(value);
+
+	}
+
+}
