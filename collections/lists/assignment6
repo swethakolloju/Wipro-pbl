@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+import java.util.Vector;
+
+public class Vector1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Vector<String> mn = new Vector<>();
+		
+		mn.add("jan");
+		mn.add("feb");
+		mn.add("mar");
+		mn.add("apr");
+		mn.add("may");
+		mn.add("jun");
+		mn.add("jul");
+		mn.add("aug");
+		mn.add("sep");
+		mn.add("nov");
+		mn.add("oct");
+		mn.add("dec");
+		System.out.println(mn);
+	}
+
+}
